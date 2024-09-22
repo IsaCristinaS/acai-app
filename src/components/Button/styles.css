@@ -1,0 +1,16 @@
+button {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(93, 203, 166);
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+    min-width: 150px;
+}
+
+button:hover{ 
+    background-color: rgb(108, 237, 194);
+
+}

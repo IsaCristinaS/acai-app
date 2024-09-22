@@ -2,7 +2,9 @@ import { ReactNode } from 'react';
 import { PriceProps } from '../Card/types'
 
 export type FlavourProps = {
-  flavor: string;
+  flavour: string;
+  imageUrl: string;
+  registerValue: string;
   values: PriceProps[]
 }
 

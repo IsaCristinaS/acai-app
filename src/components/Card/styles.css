@@ -18,12 +18,11 @@
 .image{
   height: 350px;
   width: 100%;
-  background-color: red;
   
   img{
-    height: inherit;
-    width: inherit;
-    object-fit: none;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 
   }
 }

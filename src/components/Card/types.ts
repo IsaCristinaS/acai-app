@@ -10,11 +10,12 @@ export type PriceProps = {
 }
 
 export type CardProps = { 
-  prices: PriceProps[]; 
+  prices?: PriceProps[]; 
   title: string; 
-  disabled: boolean;
-  parentStates: MethodsProps;
+  imageUrl: string;
+  type: string;
+  registerValue: string;
+  parentStates?: MethodsProps;
   register: Function;
   setValue: Function;
-  errors: any
  }
