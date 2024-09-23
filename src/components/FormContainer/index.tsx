@@ -1,8 +1,8 @@
-import "./styles.css";
 import { useEffect, useState } from "react";
 import { DB_URL } from "../../api";
 import { Button } from "../Button";
 import { Card } from "../Card";
+import "./styles.css";
 import { FlavourProps, SideProps } from "./types";
 
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -71,7 +71,7 @@ export function FormContainer() {
 
     return (
       <form onSubmit={handleSubmit(handleOrderForm)}>
-        <div className="container-order">
+        <div className="container-orders">
           {orders?.map((values: FlavourProps) => (
             <Card
               key={values.flavour}
