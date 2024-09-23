@@ -1,8 +1,5 @@
 import './styles.css'
-
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  title: string
-}
+import { ButtonProps } from './types'
 
 export function Button({ title, ...rest }: ButtonProps ) {
   return(

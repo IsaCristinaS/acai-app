@@ -8,6 +8,12 @@ export type FlavourProps = {
   values: PriceProps[]
 }
 
+export type SideProps = {
+  flavour: string;
+  imageUrl: string;
+  registerValue: string;
+}
+
 export type FormContainerProps = {
   orderForm: ReactNode;
   sideForm: ReactNode;

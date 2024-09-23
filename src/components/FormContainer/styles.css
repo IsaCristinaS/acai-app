@@ -1,3 +1,23 @@
-.container{
+form{
   display: flex;
+  flex-direction: column;
 }
+
+.bt-home{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+
+.err-home{
+  text-align: center;
+  margin-top: 24px;
+}
+
+.bt-side{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 48px;
+  }
+

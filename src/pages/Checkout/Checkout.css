@@ -1,0 +1,32 @@
+.container-ck {
+  height: 90vh;
+}
+
+ .container-ck h1 {
+    text-align: center;
+    color: rgb(33, 180, 180);
+  }
+
+.content-ck {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.content-ck p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.content-ck h2 {
+  margin-top: 48px;
+  margin-bottom: 10px;
+  background-color: antiquewhite;
+  border-radius: 5px;
+}
+
+.bts-ck {
+  display: flex;
+  gap: 100px;
+  padding-top: 20px;
+}

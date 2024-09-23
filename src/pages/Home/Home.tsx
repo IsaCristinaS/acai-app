@@ -1,9 +1,9 @@
 import { FormContainer } from '../../components/FormContainer';
-import './Home.css';
+import './Home.css'
 
 function Home() {
   return (
-    <div className="App">
+    <div>
       <FormContainer/>
     </div>
   );

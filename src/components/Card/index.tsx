@@ -1,7 +1,7 @@
 import { useState } from "react";
 import store from "../../redux/store";
 import "./styles.css";
-import { CardProps } from "./types";
+import { CardProps, PriceProps } from "./types";
 
 export function Card({
   prices,
@@ -15,8 +15,8 @@ export function Card({
 }: CardProps) {
   const [isFlavourClicked, setIsFlavourClicked] = useState<boolean>(false);
 
-  const handleFlavourChange = (e: any) => {
-    const { value } = e.target;
+  const handleFlavourChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const  { value }: { value: string } = e.target;
     parentStates?.setActualFruit(value);
     store.dispatch({ type: `add${type}`, payload: { flavour: value } });
     setValue("flavour", value);
@@ -25,7 +25,7 @@ export function Card({
     setIsFlavourClicked(false);
   };
 
-  const handleSizeChange = (e: any, item: any) => {
+  const handleSizeChange = (e: React.ChangeEvent<HTMLInputElement>, item: PriceProps) => {
     store.dispatch({ type: "addPricePerSize", payload: { pricePerSize: item } });
 
     setValue("pricesPerSize", { ...item });
