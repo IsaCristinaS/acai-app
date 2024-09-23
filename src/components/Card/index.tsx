@@ -39,7 +39,7 @@ export function Card({
             <img src={imageUrl} alt="" />
           </div>
 
-          <div className="container">
+          <div className="container-card">
             <input
               type="radio"
               name={registerValue}

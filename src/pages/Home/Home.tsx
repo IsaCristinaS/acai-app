@@ -3,9 +3,7 @@ import './Home.css'
 
 function Home() {
   return (
-    <div>
-      <FormContainer/>
-    </div>
+    <div> <FormContainer/> </div>
   );
 }
 
